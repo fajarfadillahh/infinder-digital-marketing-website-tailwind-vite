@@ -1,4 +1,29 @@
+/* ===== Font Google ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 /* ===== Add the Tailwind directives to your CSS ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== Reusable Css Class ===== */
+@layer components {
+  /* Section Class */
+  .section {
+    @apply pt-24 pb-12;
+  }
+  .section-subtitle {
+    @apply text-center block text-[18px] font-bold uppercase tracking-[5px] mb-3;
+  }
+  .section-title {
+    @apply text-center text-[24px] text-black font-bold capitalize;
+  }
+
+  /* Button Class */
+  .button {
+    @apply flex justify-center items-center py-4 px-8 rounded-2xl text-[15px] font-bold transition-all duration-500;
+  }
+  .button-fill {
+    @apply bg-green text-white hover:bg-[#07946c];
+  }
+}
