@@ -248,7 +248,9 @@
       <section class="team section">
         <div class="team__container container grid gap-12">
           <div class="team__data">
-            <span class="team__subtitle section-subtitle">our team</span>
+            <span class="team__subtitle section-subtitle text-yellow"
+              >our team</span
+            >
             <h1 class="team__title section-title">meet the team</h1>
           </div>
 
@@ -328,6 +330,40 @@
         </div>
       </section>
       <!-- ===== TEAM SECTION ===== -->
+
+      <!-- ===== NEWSLETTER SECTION ===== -->
+      <section class="newsletter section">
+        <div class="newsletter__container container grid gap-8">
+          <div class="newsletter__data text-center">
+            <span class="newsletter__subtitle section-subtitle text-red"
+              >get more info</span
+            >
+            <h1 class="newsletter__title section-title mb-4">
+              Subscribe our newsletter
+            </h1>
+            <p class="newsletter__text text-[15px] text-grey leading-text">
+              Our goal is top at the heart of creative services industry as a
+              digital creator. In has a after comment.
+            </p>
+          </div>
+
+          <form
+            action=""
+            class="newsletter__form overflow-hidden flex flex-col gap-4"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="newsletter__form-input flex text-center text-[15px] text-black font-semibold p-4 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[1rem] placeholder:text-[15px] placeholder:text-grey placeholder:font-medium"
+              onkeyup="this.value = this.value.toLowerCase()"
+            />
+            <button class="newsletter__form-button button button-fill">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- ===== NEWSLETTER SECTION ===== -->
     </main>
 
     <!-- ===== MAIN JS ===== -->
