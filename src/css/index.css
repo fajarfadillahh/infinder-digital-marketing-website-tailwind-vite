@@ -60,3 +60,26 @@
 .feature__item-icon {
   @apply inline-flex text-[1rem] p-[.3rem] bg-green text-white rounded-full;
 }
+
+/* ===== TEAM SECTION ===== */
+.team__item {
+  @apply w-[230px] grid gap-8;
+}
+.team__item-img {
+  @apply w-[100px] justify-self-center;
+}
+.team__item-data {
+  @apply text-center;
+}
+.team__item-name {
+  @apply text-[20px] text-black font-bold mb-[6px];
+}
+.team__item-profession {
+  @apply text-[15px] text-grey mb-[14px];
+}
+.team__item-socials {
+  @apply inline-flex items-center gap-4;
+}
+.team__item-link {
+  @apply text-[1.7rem] text-green;
+}
