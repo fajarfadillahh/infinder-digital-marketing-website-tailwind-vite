@@ -41,3 +41,14 @@
 .header__link.active-link {
   @apply text-green font-semibold;
 }
+
+/* ===== SERVICE SECTION ===== */
+.service__item {
+  @apply w-[280px] grid gap-8 px-8 py-12 ring-[1.5px] ring-[rgba(0,0,0,0.1)] rounded-[2rem] transition-all duration-500 hover:ring-white hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+}
+.service__item-title {
+  @apply text-[20px] text-black font-bold mb-[10px];
+}
+.service__item-text {
+  @apply text-[15px] text-grey leading-text;
+}
