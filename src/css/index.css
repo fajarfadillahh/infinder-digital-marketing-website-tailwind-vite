@@ -77,9 +77,20 @@
 .team__item-profession {
   @apply text-[15px] text-grey mb-[14px];
 }
-.team__item-socials {
+
+/* ===== FOOTER SECTION ===== */
+.footer__item-socials {
   @apply inline-flex items-center gap-4;
 }
-.team__item-link {
+.footer__item-icon {
   @apply text-[1.7rem] text-green;
+}
+.footer__item-title {
+  @apply text-[20px] text-black font-semibold mb-6;
+}
+.footer__item-list {
+  @apply flex flex-col gap-3;
+}
+.footer__item-link {
+  @apply text-[15px] text-grey hover:text-green hover:underline;
 }
