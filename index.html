@@ -17,6 +17,56 @@
     />
   </head>
   <body class="font-body font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-500"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-1 text-[20px] text-black font-bold"
+        >
+          <img src="./src/img/icon.svg" alt="" class="header__logo-icon w-10" />
+          Infinder.
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-4">
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Service</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Feature</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Our Team</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__button button button-fill mt-4"
+            >Register</a
+          >
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[2rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== MAIN JS ===== -->
     <script type="module" src="./src/js/main.js"></script>
   </body>
