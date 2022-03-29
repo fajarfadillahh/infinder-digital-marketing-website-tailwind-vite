@@ -52,3 +52,11 @@
 .service__item-text {
   @apply text-[15px] text-grey leading-text;
 }
+
+/* ===== FEATURE SECTION ===== */
+.feature__item {
+  @apply inline-flex items-center gap-2 text-[15px] text-grey;
+}
+.feature__item-icon {
+  @apply inline-flex text-[1rem] p-[.3rem] bg-green text-white rounded-full;
+}
