@@ -94,3 +94,8 @@
 .footer__item-link {
   @apply text-[15px] text-grey hover:text-green hover:underline;
 }
+
+/* ===== SCROLLUP SECTION ===== */
+.scrollup.scroll-action {
+  @apply opacity-100;
+}
