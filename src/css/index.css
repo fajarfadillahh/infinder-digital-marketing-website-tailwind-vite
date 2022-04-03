@@ -16,7 +16,7 @@
     @apply text-center block text-[18px] font-bold uppercase tracking-[5px] mb-3;
   }
   .section-title {
-    @apply text-center text-[24px] text-black font-bold capitalize;
+    @apply text-center text-[24px] text-black font-bold capitalize sm:text-[28px];
   }
 
   /* Button Class */
