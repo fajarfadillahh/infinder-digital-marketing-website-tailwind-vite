@@ -21,7 +21,7 @@
 
   /* Button Class */
   .button {
-    @apply flex justify-center items-center py-4 px-8 rounded-2xl text-[15px] font-semibold transition-all duration-500;
+    @apply flex justify-center items-center py-4 px-8 rounded-2xl text-[15px] font-semibold transition-all duration-500 md:text-[16px];
   }
   .button-fill {
     @apply bg-green text-white hover:bg-[#07946c];
@@ -35,11 +35,13 @@
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
-.header__menu {
-  @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-[#fafafa] rounded-[2rem] shadow-[0_0_12px_rgba(0,0,0,0.1)] transition-all duration-500 opacity-0 origin-[0%_0%] scale-y-0;
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-[#fafafa] rounded-[2rem] shadow-[0_0_12px_rgba(0,0,0,0.1)] transition-all duration-500 opacity-0 origin-[0%_0%] scale-y-0;
+  }
 }
 .header__link {
-  @apply text-[15px] text-black;
+  @apply text-[15px] text-black md:text-[16px];
 }
 .header__link.active-link {
   @apply text-green font-semibold;
@@ -53,12 +55,12 @@
   @apply text-[20px] text-black font-bold mb-[10px];
 }
 .service__item-text {
-  @apply text-[15px] text-grey leading-text;
+  @apply text-[15px] text-grey leading-text md:text-[16px];
 }
 
 /* ===== FEATURE SECTION ===== */
 .feature__item {
-  @apply inline-flex items-center gap-2 text-[15px] text-grey;
+  @apply inline-flex items-center gap-2 text-[15px] text-grey md:text-[16px];
 }
 .feature__item-icon {
   @apply inline-flex text-[1rem] p-[.3rem] bg-green text-white rounded-full;
@@ -78,7 +80,7 @@
   @apply text-[20px] text-black font-bold mb-[6px];
 }
 .team__item-profession {
-  @apply text-[15px] text-grey mb-[14px];
+  @apply text-[15px] text-grey mb-[14px] md:text-[16px];
 }
 .team__item-socials {
   @apply inline-flex items-center gap-4;
@@ -101,7 +103,7 @@
   @apply flex flex-col gap-3;
 }
 .footer__item-link {
-  @apply text-[15px] text-grey hover:text-green hover:underline;
+  @apply text-[15px] text-grey hover:text-green hover:underline md:text-[16px];
 }
 
 /* ===== SCROLLUP SECTION ===== */
