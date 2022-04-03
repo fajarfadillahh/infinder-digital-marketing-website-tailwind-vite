@@ -80,6 +80,12 @@
 .team__item-profession {
   @apply text-[15px] text-grey mb-[14px];
 }
+.team__item-socials {
+  @apply inline-flex items-center gap-4;
+}
+.team__item-link {
+  @apply text-green text-[1.5rem];
+}
 
 /* ===== FOOTER SECTION ===== */
 .footer__item-socials {
