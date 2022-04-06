@@ -23,7 +23,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center lg:h-32"
       >
         <a
           href="#"
@@ -34,10 +34,12 @@
         </a>
 
         <div
-          class="header__menu md:flex md:items-center md:gap-6"
+          class="header__menu md:flex md:items-center md:gap-6 lg:gap-8"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-4 md:flex-row md:gap-6">
+          <ul
+            class="header__list flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8"
+          >
             <li class="header__item">
               <a href="#home" class="header__link active-link">Home</a>
             </li>
@@ -72,19 +74,21 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32 pb-12" id="home">
-        <div class="home__container container grid gap-12">
+      <section class="home pt-32 pb-12 lg:pt-40" id="home">
+        <div
+          class="home__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
           <img
             src="./src/img/home-image.svg"
             alt=""
-            class="home__img justify-self-center"
+            class="home__img justify-self-center lg:order-2"
           />
 
           <div
-            class="home__data text-center xs:w-[380px] xs:justify-self-center sm:w-[450px]"
+            class="home__data text-center xs:w-[380px] xs:justify-self-center sm:w-[450px] lg:w-auto lg:text-left"
           >
             <h1
-              class="home__title text-[26px] text-black font-bold mb-4 sm:text-[36px]"
+              class="home__title text-[26px] text-black font-bold mb-4 sm:text-[36px] lg:text-[48px]"
             >
               Providing brilliant ideas for your business
             </h1>
@@ -121,7 +125,9 @@
             <h1 class="service__title section-title">our vision & our goals</h1>
           </div>
 
-          <div class="service__group grid justify-center gap-8">
+          <div
+            class="service__group grid justify-center gap-8 lg:grid-cols-[repeat(2,_max-content)]"
+          >
             <div class="service__item">
               <img
                 src="./src/img/service-icon-(1).svg"
@@ -185,20 +191,24 @@
 
       <!-- ===== FEATURE SECTION ===== -->
       <section class="feature section" id="feature">
-        <div class="feature__container container grid gap-12">
+        <div
+          class="feature__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
           <div
-            class="feature__data grid xs:w-[380px] xs:justify-self-center sm:w-[450px]"
+            class="feature__data grid xs:w-[380px] xs:justify-self-center sm:w-[450px] lg:w-auto lg:justify-self-start lg:order-2"
           >
-            <h1 class="feature__title section-title mb-4">
+            <h1 class="feature__title section-title mb-4 lg:text-left">
               Awesome Features Awaiting For You
             </h1>
             <p
-              class="feature__text text-[15px] text-grey text-center leading-text mb-4 md:text-[16px]"
+              class="feature__text text-[15px] text-grey text-center leading-text mb-4 md:text-[16px] lg:text-left"
             >
               Our goal is top at the heart of creative services industry as a
               digital creator. In has a after comment.
             </p>
-            <div class="feature__group grid gap-4 justify-self-center mb-8">
+            <div
+              class="feature__group grid gap-4 justify-self-center mb-8 lg:justify-self-start"
+            >
               <div class="feature__item">
                 <i class="bx bx-check feature__item-icon"></i>
                 Excepteur sint occaecat cupidatat
@@ -218,7 +228,7 @@
             </div>
             <a
               href="#"
-              class="feature__button button button-fill justify-self-center"
+              class="feature__button button button-fill justify-self-center lg:justify-self-start"
               >Learn More</a
             >
           </div>
@@ -236,12 +246,12 @@
       <section class="email section">
         <div class="email__container container">
           <div
-            class="email__wrapper grid gap-12 pt-20 px-10 bg-[rgba(8,168,123,.1)] rounded-[2rem]"
+            class="email__wrapper grid gap-12 pt-20 px-10 bg-[rgba(8,168,123,.1)] rounded-[2rem] lg:relative lg:flex lg:py-32 lg:px-16"
           >
             <div
-              class="email__data text-center xs:w-[350px] xs:justify-self-center sm:w-[450px]"
+              class="email__data text-center xs:w-[350px] xs:justify-self-center sm:w-[450px] lg:text-left lg:justify-self-start"
             >
-              <h1 class="email__title section-title mb-4">
+              <h1 class="email__title section-title mb-4 lg:text-left">
                 Instant email & postal delivery
               </h1>
               <p
@@ -260,7 +270,7 @@
             <img
               src="./src/img/email-image.svg"
               alt=""
-              class="email__img justify-self-center"
+              class="email__img justify-self-center lg:absolute lg:right-0 lg:bottom-0"
             />
           </div>
         </div>
@@ -277,7 +287,9 @@
             <h1 class="team__title section-title">meet the team</h1>
           </div>
 
-          <div class="team__group grid justify-center gap-8">
+          <div
+            class="team__group grid justify-center gap-8 lg:grid-cols-[repeat(3,_max-content)]"
+          >
             <div class="team__item">
               <img
                 src="./src/img/profile-picture-(1).png"
@@ -358,7 +370,7 @@
       <section class="newsletter section" id="contact">
         <div class="newsletter__container container grid gap-8">
           <div
-            class="newsletter__data text-center xs:w-[380px] xs:justify-self-center sm:w-[450px]"
+            class="newsletter__data text-center xs:w-[380px] xs:justify-self-center sm:w-[450px] lg:w-[500px]"
           >
             <span class="newsletter__subtitle section-subtitle text-red"
               >get more info</span
@@ -376,12 +388,12 @@
 
           <form
             action=""
-            class="newsletter__form overflow-hidden flex flex-col gap-4 xs:w-[380px] sm:w-[450px] xs:justify-self-center"
+            class="newsletter__form overflow-hidden flex flex-col gap-4 xs:w-[380px] sm:w-[450px] xs:justify-self-center lg:flex-row lg:w-[500px]"
           >
             <input
               type="text"
               placeholder="Enter your email"
-              class="newsletter__form-input flex text-center text-[15px] text-black font-semibold p-4 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[1rem] placeholder:text-[15px] placeholder:text-grey placeholder:font-medium md:text-[16px] md:placeholder:text-[16px]"
+              class="newsletter__form-input flex text-center text-[15px] text-black font-semibold p-4 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[1rem] placeholder:text-[15px] placeholder:text-grey placeholder:font-medium md:text-[16px] md:placeholder:text-[16px] lg:w-full lg:text-left"
               onkeyup="this.value = this.value.toLowerCase()"
             />
             <button class="newsletter__form-button button button-fill">
@@ -394,7 +406,7 @@
     </main>
 
     <!-- ===== FOOTER SECTION ===== -->
-    <footer class="footer section">
+    <footer class="footer section lg:pb-12">
       <div class="footer__container container grid gap-24">
         <div
           class="footer__group grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-8"
